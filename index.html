@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LATOOS — Every Swing Becomes a Weapon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="loader"><div class="loader-mark"><img src="images/logo.png" alt="LATOOS"></div></div>
+
+  <header class="nav" id="siteNav">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" class="logo-img" alt="LATOOS"></a></div>
+    <nav class="links">
+      <a href="#products">Products</a>
+      <a href="#technology">Technology</a>
+      <a href="about.html">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="carbon-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="lightsweep"></div>
+    <canvas id="particles"></canvas>
+
+    <div class="eyebrow">Precision Engineered · Built for Competition</div>
+
+    <div class="paddle-stage">
+      <div class="paddle-stage-glow"></div>
+      <img src="images/apex-hero.png" class="hero-paddle-img" alt="LATOOS APEX pickleball paddle, matte black with gold detailing">
+    </div>
+
+    <h1 class="hero-title">Every Swing<br>Becomes <em>a Weapon.</em></h1>
+    <p class="hero-sub">Premium pickleball paddles engineered for players who refuse average.</p>
+
+    <div class="hero-buttons">
+      <a href="#surge" class="btn btn-emerald">Shop SURGE</a>
+      <a href="#apex" class="btn btn-primary">Shop APEX</a>
+    </div>
+
+    <p class="hero-trust">Engineered with cutting-edge materials · Built for players who demand more</p>
+    <div class="scroll-cue"></div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy" id="about">
+    <p class="phil-line reveal">
+      We don't build paddles.
+      <strong>We engineer confidence.</strong>
+    </p>
+    <p class="phil-body reveal">
+      Whether you're climbing the ladder or competing for championships, every LATOOS paddle
+      is designed to maximize precision, control, and explosive power.
+    </p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <div id="products">
+
+  <section class="product surge reveal" id="surge">
+    <div class="product-visual">
+      <img src="images/surge.jpg" class="product-photo" alt="LATOOS SURGE pickleball paddle, matte black with emerald green edge guard">
+    </div>
+    <div>
+      <span class="badge">Intermediate</span>
+      <h3>SURGE</h3>
+      <p class="tagline">Fast. Fluid. Fearless.</p>
+      <p class="desc">Designed for ambitious players looking to improve consistency, spin, and confidence.</p>
+      <ul class="highlights">
+        <li>T700 Raw Carbon Fiber</li>
+        <li>Lightweight</li>
+        <li>Maximum Spin</li>
+        <li>Forgiving Sweet Spot</li>
+        <li>Exceptional Control</li>
+      </ul>
+      <a href="#" class="btn btn-emerald">Explore SURGE</a>
+    </div>
+  </section>
+
+  <section class="product purple reveal" id="surge-purple">
+    <div class="product-visual">
+      <img src="images/surge-purple.jpg" class="product-photo" alt="LATOOS SURGE Purple pickleball paddle, matte black with royal purple edge guard">
+    </div>
+    <div>
+      <span class="badge">Intermediate</span>
+      <h3>SURGE <span style="color:#b79bff">Purple</span></h3>
+      <p class="tagline">Fast. Fluid. Fearless.</p>
+      <p class="desc">The same competitive DNA as SURGE, finished in Royal Purple for players who want to stand out on court.</p>
+      <ul class="highlights">
+        <li>T700 Raw Carbon Fiber</li>
+        <li>Lightweight</li>
+        <li>Maximum Spin</li>
+        <li>Forgiving Sweet Spot</li>
+        <li>Exceptional Control</li>
+      </ul>
+      <a href="#" class="btn btn-purple">Explore SURGE Purple</a>
+    </div>
+  </section>
+
+  <section class="product apex reveal" id="apex">
+    <div class="product-visual">
+      <img src="images/apex.jpg" class="product-photo" alt="LATOOS APEX pickleball paddle on display stand, matte black with gold detailing">
+    </div>
+    <div>
+      <span class="badge">Tournament</span>
+      <h3>APEX</h3>
+      <p class="tagline">Engineered for Winners.</p>
+      <p class="desc">Our flagship paddle featuring Carbon/Kevlar Hybrid technology and an EVA + EPP Foam Core for elite-level power, stability, and precision.</p>
+      <ul class="highlights">
+        <li>Carbon Fiber/Kevlar Hybrid</li>
+        <li>EVA + EPP Foam Core</li>
+        <li>Reduced Vibration</li>
+        <li>Expanded Sweet Spot</li>
+        <li>Tournament Performance</li>
+      </ul>
+      <a href="#" class="btn btn-primary">Experience APEX</a>
+    </div>
+  </section>
+
+  </div>
+
+  <!-- TECHNOLOGY -->
+  <section class="tech" id="technology">
+    <span class="eyebrow reveal">Technology &amp; Specs</span>
+    <h2 class="reveal" style="font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;max-width:700px;">
+      What's actually in your paddle.
+    </h2>
+
+    <div class="specs-grid reveal">
+
+      <!-- SURGE spec card -->
+      <div class="spec-card surge">
+        <div class="spec-card-head">
+          <h3>SURGE</h3>
+          <span class="spec-badge">Intermediate · 3.0–4.5</span>
+        </div>
+        <p class="spec-sub">Club to competitive play — built for players sharpening their game.</p>
+
+        <div class="spec-features">
+          <div class="spec-feature">
+            <div class="f-title">Gen 4 Full Foam Core</div>
+            <div class="f-desc">No honeycomb, no dead spots — a consistent feel that holds up over years of play.</div>
+          </div>
+          <div class="spec-feature">
+            <div class="f-title">Raw T700 Carbon Face</div>
+            <div class="f-desc">Left unpainted on purpose — the exposed carbon texture is what generates extra spin.</div>
+          </div>
+          <div class="spec-feature">
+            <div class="f-title">Quiet &amp; Arm-Friendly</div>
+            <div class="f-desc">Noticeably softer on the arm than typical honeycomb-core paddles.</div>
+          </div>
+        </div>
+
+        <div class="spec-dims">
+          <div class="spec-dim"><span class="d-label">Weight</span><span class="d-val">7.8–8.2 oz</span></div>
+          <div class="spec-dim"><span class="d-label">Grip</span><span class="d-val">4.33"</span></div>
+        </div>
+
+        <div class="spec-meta">
+          <div><strong>Colorways —</strong> Emerald, Royal Purple</div>
+          <div><strong>Included —</strong> Pre-wrapped overgrip</div>
+          <div><strong>Certification —</strong> Designed for USA Pickleball approval</div>
+        </div>
+      </div>
+
+      <!-- APEX spec card -->
+      <div class="spec-card apex">
+        <div class="spec-card-head">
+          <h3>APEX</h3>
+          <span class="spec-badge">Advanced · Tournament · 4.0–5.0+</span>
+        </div>
+        <p class="spec-sub">LATOOS' flagship — the highest-spec paddle in the range.</p>
+
+        <div class="spec-features">
+          <div class="spec-feature">
+            <div class="f-title">Gen 5 Hybrid Core</div>
+            <div class="f-desc">A dual-foam blend engineered to feel lively and stay stable at once — power without giving up control.</div>
+          </div>
+          <div class="spec-feature">
+            <div class="f-title">Carbon/Kevlar Hybrid Face</div>
+            <div class="f-desc">Kevlar adds durability and damping; carbon adds spin and stiffness — the best of both.</div>
+          </div>
+          <div class="spec-feature">
+            <div class="f-title">Elongated Shape</div>
+            <div class="f-desc">Extra reach and leverage, plus meaningfully less vibration transfer through long matches.</div>
+          </div>
+        </div>
+
+        <div class="spec-dims">
+          <div class="spec-dim"><span class="d-label">Weight</span><span class="d-val">7.7–8.1 oz</span></div>
+          <div class="spec-dim"><span class="d-label">Grip</span><span class="d-val">4.33"</span></div>
+        </div>
+
+        <div class="spec-meta">
+          <div><strong>Colorways —</strong> Midnight Gold, Obsidian Black</div>
+          <div><strong>Included —</strong> Ultra-thin overgrip</div>
+          <div><strong>Certification —</strong> Designed for USA Pickleball approval</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ENGINEERING -->
+    <div class="reveal" style="margin-top:120px;">
+      <span class="eyebrow">The Engineering</span>
+      <h2 style="font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;max-width:700px;">Every layer has a purpose.</h2>
+
+      <div class="tech-grid" style="margin-top:70px;">
+        <div class="tech-card">
+          <div class="tech-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h18M3 12h18M3 16h18"/><path d="M8 3v18M12 3v18M16 3v18"/></svg></div>
+          <span class="tech-num">01 / Carbon Fiber</span>
+          <h4>Carbon Fiber</h4>
+          <ul>
+            <li>Maximum stiffness</li>
+            <li>Explosive energy transfer</li>
+            <li>Elite spin generation</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></div>
+          <span class="tech-num">02 / Kevlar Layer</span>
+          <h4>Kevlar Layer</h4>
+          <ul>
+            <li>Superior vibration dampening</li>
+            <li>Better feel</li>
+            <li>Greater durability</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><circle cx="12" cy="11" r="3"/></svg></div>
+          <span class="tech-num">03 / Foam Core</span>
+          <h4>EVA + EPP Foam Core</h4>
+          <ul>
+            <li>Enhanced power</li>
+            <li>Larger sweet spot</li>
+            <li>More forgiving</li>
+            <li>Better consistency</li>
+            <li>Elite stability</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg></div>
+          <span class="tech-num">04 / Raw Carbon Face</span>
+          <h4>Raw Carbon Face</h4>
+          <ul>
+            <li>Exceptional grip</li>
+            <li>Maximum spin</li>
+            <li>Professional-level control</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPARISON -->
+    <div class="reveal" style="margin-top:120px;">
+      <span class="eyebrow">Head to Head</span>
+      <h2 style="font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;max-width:700px;">SURGE vs. APEX</h2>
+      <table class="compare-table" id="compareTable">
+        <thead>
+          <tr><th>Feature</th><th>SURGE</th><th>APEX</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill emerald" data-pct="82"></div></div><span class="bar-pct">82%</span></div></td>
+            <td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill gold" data-pct="94"></div></div><span class="bar-pct">94%</span></div></td>
+          </tr>
+          <tr>
+            <td>Control</td>
+            <td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill emerald" data-pct="85"></div></div><span class="bar-pct">85%</span></div></td>
+            <td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill gold" data-pct="90"></div></div><span class="bar-pct">90%</span></div></td>
+          </tr>
+          <tr>
+            <td>Spin</td>
+            <td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill emerald" data-pct="90"></div></div><span class="bar-pct">90%</span></div></td>
+            <td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill gold" data-pct="92"></div></div><span class="bar-pct">92%</span></div></td>
+          </tr>
+          <tr>
+            <td>Forgiveness</td>
+            <td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill emerald" data-pct="90"></div></div><span class="bar-pct">90%</span></div></td>
+            <td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill gold" data-pct="82"></div></div><span class="bar-pct">82%</span></div></td>
+          </tr>
+          <tr>
+            <td>Sweet Spot</td>
+            <td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill emerald" data-pct="88"></div></div><span class="bar-pct">88%</span></div></td>
+            <td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill gold" data-pct="90"></div></div><span class="bar-pct">90%</span></div></td>
+          </tr>
+          <tr>
+            <td>Tournament Ready</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check-double">✓✓</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section>
+    <span class="eyebrow reveal">Why Players Choose LATOOS</span>
+    <h2 class="reveal" style="font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;max-width:700px;">
+      Built for the moments that matter.
+    </h2>
+    <div class="why-grid reveal">
+      <div class="why-card">
+        <span class="n">Precision</span>
+        <h4>Precision</h4>
+        <p>Built for pinpoint accuracy.</p>
+      </div>
+      <div class="why-card">
+        <span class="n">Performance</span>
+        <h4>Performance</h4>
+        <p>Designed to respond instantly.</p>
+      </div>
+      <div class="why-card">
+        <span class="n">Innovation</span>
+        <h4>Innovation</h4>
+        <p>Premium materials inside and out.</p>
+      </div>
+      <div class="why-card">
+        <span class="n">Confidence</span>
+        <h4>Confidence</h4>
+        <p>Because every point matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIFESTYLE -->
+  <section class="lifestyle reveal">
+    <h2>
+      <span>Play Better.</span>
+      <span>Look Better.</span>
+      <span class="gold">Win More.</span>
+    </h2>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <span class="eyebrow reveal">Customer Reviews</span>
+    <h2 class="reveal" style="font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;max-width:700px;">
+      What players are saying.
+    </h2>
+    <div class="reviews-grid reveal">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>I switched from another premium brand and honestly didn't expect this level of control.</p>
+        <div class="who">— M. Reyes, 4.5 DUPR</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>The foam-core technology is incredible. Every shot feels intentional now.</p>
+        <div class="who">— J. Whitfield, League Champion</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Looks premium. Feels premium. Plays premium.</p>
+        <div class="who">— T. Nakamura, Tournament Player</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner reveal">
+    <h2>Your game deserves<br>a weapon.</h2>
+    <div class="hero-buttons">
+      <a href="#surge" class="btn btn-emerald">Shop SURGE</a>
+      <a href="#apex" class="btn btn-primary">Shop APEX</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:16px;"><img src="images/logo.png" class="logo-img" alt="LATOOS"></div>
+        <p style="color:rgba(248,248,248,.4);font-size:.85rem;max-width:220px;">Premium performance. Designed to convert every point into a win.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="#surge">SURGE</a></li>
+          <li><a href="#surge-purple">SURGE Purple</a></li>
+          <li><a href="#apex">APEX</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 LATOOS. All rights reserved.</div>
+      <div class="social">
+        <a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a>
+      </div>
+      <div><a href="#">Privacy</a></div>
+    </div>
+  </footer>
+
+  <div class="mobile-buy" id="mobileBuy">
+    <span class="price mono">APEX — $249</span>
+    <a href="#apex" class="btn btn-primary" style="padding:10px 24px;font-size:11px;">Buy Now</a>
+  </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

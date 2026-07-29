@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About LATOOS — Built by Players, for Players</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .about-hero{
+    min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:160px 20px 100px;position:relative;overflow:hidden;
+  }
+  .about-hero .carbon-bg{position:absolute;inset:0;z-index:0;}
+  .about-hero h1{
+    position:relative;z-index:2;font-size:clamp(2.4rem,6vw,4.5rem);font-weight:800;line-height:1.05;max-width:900px;
+  }
+  .about-hero p{position:relative;z-index:2;margin-top:22px;color:var(--muted);max-width:560px;font-weight:300;font-size:1.1rem;}
+  .story{max-width:760px;margin:0 auto;}
+  .story p{color:rgba(248,248,248,.8);font-size:1.05rem;font-weight:300;line-height:1.9;margin-bottom:26px;}
+  .story p strong{color:var(--white);font-weight:600;}
+</style>
+</head>
+<body>
+
+  <div id="loader"><div class="loader-mark"><img src="images/logo.png" alt="LATOOS"></div></div>
+
+  <header class="nav" id="siteNav">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" class="logo-img" alt="LATOOS"></a></div>
+    <nav class="links">
+      <a href="index.html#products">Products</a>
+      <a href="index.html#technology">Technology</a>
+      <a href="about.html">About</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </header>
+
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
+    <div class="carbon-bg"></div>
+    <span class="eyebrow reveal" style="position:relative;z-index:2;">Our Story</span>
+    <h1 class="reveal">Built by players,<br>for our local community.</h1>
+    <p class="reveal">LATOOS started the way most good ideas do — three friends on a court, wishing the gear was better without costing more.</p>
+  </section>
+
+  <!-- STORY -->
+  <section class="story">
+    <p class="reveal">We picked up pickleball together about three months ago. Like a lot of new players, we quickly fell in love with the game — and just as quickly got frustrated with our options. The paddles that actually performed well were priced for tournament pros, and the affordable ones felt like an afterthought.</p>
+    <p class="reveal"><strong>So we decided to build the paddle we wished we could buy.</strong> Not a gimmick, not a reskin of someone else's mold — real materials, real engineering, priced for the local community we actually play in.</p>
+    <p class="reveal">LATOOS is still small. We're players first, and that's exactly the point — every decision we make about our paddles starts with the question, "would we want to play with this ourselves?"</p>
+  </section>
+
+  <!-- VALUES -->
+  <section>
+    <span class="eyebrow reveal">What We Stand For</span>
+    <h2 class="reveal" style="font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;max-width:700px;">
+      A brand built on the court, not in a boardroom.
+    </h2>
+    <div class="why-grid reveal">
+      <div class="why-card">
+        <span class="n">Community</span>
+        <h4>Community First</h4>
+        <p>Built for the players we actually share a court with.</p>
+      </div>
+      <div class="why-card">
+        <span class="n">Value</span>
+        <h4>Honest Pricing</h4>
+        <p>Real specification, without the tournament-pro markup.</p>
+      </div>
+      <div class="why-card">
+        <span class="n">Craft</span>
+        <h4>Engineered, Not Rebranded</h4>
+        <p>Every material choice is made on purpose, not copy-pasted.</p>
+      </div>
+      <div class="why-card">
+        <span class="n">Growth</span>
+        <h4>Players First</h4>
+        <p>We're new to the game too — we build for where you are.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner reveal">
+    <h2>Come play with us.</h2>
+    <div class="hero-buttons">
+      <a href="index.html#surge" class="btn btn-emerald">Shop SURGE</a>
+      <a href="index.html#apex" class="btn btn-primary">Shop APEX</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:16px;"><img src="images/logo.png" class="logo-img" alt="LATOOS"></div>
+        <p style="color:rgba(248,248,248,.4);font-size:.85rem;max-width:220px;">Premium performance. Designed to convert every point into a win.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="index.html#surge">SURGE</a></li>
+          <li><a href="index.html#surge-purple">SURGE Purple</a></li>
+          <li><a href="index.html#apex">APEX</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#technology">Technology</a></li>
+          <li><a href="index.html#reviews">Reviews</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 LATOOS. All rights reserved.</div>
+      <div class="social">
+        <a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a>
+      </div>
+      <div><a href="#">Privacy</a></div>
+    </div>
+  </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
