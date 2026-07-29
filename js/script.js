@@ -7,7 +7,32 @@
   const nav = document.getElementById('siteNav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 40);
-    document.getElementById('mobileBuy').classList.toggle('show', window.scrollY > 900);
+    document.getElementById('mobileBuy')?.classList.toggle('show', window.scrollY > 900);
+  });
+
+  // Mobile hamburger menu
+  document.querySelectorAll('.nav-toggle').forEach(btn => {
+    const navLinks = btn.closest('header.nav')?.querySelector('nav.links');
+    if (!navLinks) return;
+
+    const closeMenu = () => {
+      navLinks.classList.remove('open');
+      btn.textContent = '☰';
+      btn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    };
+    const openMenu = () => {
+      navLinks.classList.add('open');
+      btn.textContent = '✕';
+      btn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    };
+
+    btn.setAttribute('aria-expanded', 'false');
+    btn.addEventListener('click', () => {
+      navLinks.classList.contains('open') ? closeMenu() : openMenu();
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
   });
 
   // Scroll reveal
@@ -42,32 +67,34 @@
 
   // Particle canvas
   const canvas = document.getElementById('particles');
-  const ctx = canvas.getContext('2d');
-  let particles = [];
-  function resize(){
-    canvas.width = canvas.parentElement.offsetWidth;
-    canvas.height = canvas.parentElement.offsetHeight;
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    const resize = () => {
+      canvas.width = canvas.parentElement.offsetWidth;
+      canvas.height = canvas.parentElement.offsetHeight;
+    };
+    const initParticles = () => {
+      particles = Array.from({length: 60}, () => ({
+        x: Math.random()*canvas.width,
+        y: Math.random()*canvas.height,
+        r: Math.random()*1.6 + 0.4,
+        s: Math.random()*0.3 + 0.05,
+        o: Math.random()*0.5 + 0.1
+      }));
+    };
+    const animateParticles = () => {
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      particles.forEach(p => {
+        p.y -= p.s;
+        if (p.y < 0) p.y = canvas.height;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+        ctx.fillStyle = `rgba(201,163,91,${p.o})`;
+        ctx.fill();
+      });
+      requestAnimationFrame(animateParticles);
+    };
+    resize(); initParticles(); animateParticles();
+    window.addEventListener('resize', () => { resize(); initParticles(); });
   }
-  function initParticles(){
-    particles = Array.from({length: 60}, () => ({
-      x: Math.random()*canvas.width,
-      y: Math.random()*canvas.height,
-      r: Math.random()*1.6 + 0.4,
-      s: Math.random()*0.3 + 0.05,
-      o: Math.random()*0.5 + 0.1
-    }));
-  }
-  function animateParticles(){
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-    particles.forEach(p => {
-      p.y -= p.s;
-      if (p.y < 0) p.y = canvas.height;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
-      ctx.fillStyle = `rgba(201,163,91,${p.o})`;
-      ctx.fill();
-    });
-    requestAnimationFrame(animateParticles);
-  }
-  resize(); initParticles(); animateParticles();
-  window.addEventListener('resize', () => { resize(); initParticles(); });
